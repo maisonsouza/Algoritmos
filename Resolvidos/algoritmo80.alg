@@ -13,7 +13,18 @@ algoritmo "Algoritmo 80"
 // Data : 12/03/2016
 // Seção de Declarações 
 var
-
+qf,qfa,va,fa,tm,tf:real
 inicio
-// Seção de Comandos 
+escreval("Digite a quantidade total de fitas")
+leia(qf)
+escreval("Valor de cada aluguel")
+leia(va)
+qfa<-int (qf/3)
+fa<-qfa*va * 12
+tm<-(qfa/10)*1.10
+tf<-qf*1.10*12-25
+escreval("Quantidade de fitas alugadas ",qfa)
+escreval("Faturamento Anual ",fa)
+escreval("Total de multas por mês ",tm)
+escreval("Total de fitas até o final do ano ",tf)
 fimalgoritmo
